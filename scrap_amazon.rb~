@@ -1,0 +1,17 @@
+require 'rubygems'
+require 'nokogiri'
+require 'open-uri'
+
+def amazon_scrap(scr)
+  product = scr
+  url = "http://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=#{product}&x=0&y=0&ih=1_3_1_1_0_0_0_0_0_1.71_93&fsc=4"
+  doc = Nokogiri::HTML(open(url))
+
+  puts url
+  doc.css(".tp").each do |item|
+    text = item.at_css(".details").text
+    price = item.at_css(".prices").text + "rur"
+    puts "#{text} - #{price}"
+  end
+
+end
