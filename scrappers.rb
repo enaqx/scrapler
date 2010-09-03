@@ -1,3 +1,5 @@
+# some sort of headers file
+
 require 'scrap_wallmart'
 require 'scrap_ozon'
 require 'scrap_ebay'

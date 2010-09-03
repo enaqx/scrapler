@@ -5,3 +5,9 @@ Required gems:
     * mechanize
     * httpclient
 
+Script setup:
+    1. Install ruby intepreter regarding to your system documentation
+    2. Install required gems:
+        # gem install nokogiri mechanize httpclient
+    3. Copy script set to your working directory.
+

@@ -2,6 +2,8 @@ require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
 
+# example-stub, may not work
+
 def scrap_wallmart(scr)
   product = scr
   url = "http://www.walmart.com/search/search-ng.do?search_constraint=0&ic=48_0&search_query=#{product}&Find.x=0&Find.y=0&Find=Find"
@@ -14,3 +16,4 @@ def scrap_wallmart(scr)
     puts "#{text} - #{price}"
   end
 end
+

@@ -2,6 +2,8 @@ require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
 
+# example-stub, may not work
+
 def ozon_scrap(scr)
   product = scr
   url = "http://www.ozon.ru/?context=search&text=#{product}"
@@ -15,3 +17,4 @@ def ozon_scrap(scr)
   end
 
 end
+

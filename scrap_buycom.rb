@@ -2,6 +2,8 @@ require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
 
+# example-stub, may not work
+
 def scrap_buycom(scr)
   product = scr
   url = "http://www.buy.com/retail/usersearchresults.asp?querytype=home&qu=#{product}&qxt=home&display=col"
@@ -14,3 +16,4 @@ def scrap_buycom(scr)
     puts "#{text} - #{price}"
   end
 end
+
